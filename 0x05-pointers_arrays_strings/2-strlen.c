@@ -7,11 +7,11 @@
  *     * Description: uses pointers
  *      * Return: Alawy (0)
  *      */
-
+/*for loop */
 int _strlen(char *s)
 {
 int i;
-/*for loop */
+
 for (i = 0; s[i] != '\0'; ++i)
 {
 continue;
