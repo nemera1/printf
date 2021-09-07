@@ -1,20 +1,20 @@
 #include "main.h"
 
 /**
- *  * _strlen - returns lenght of string
- *   * @s: input parameter
- *    *
- *     * Description: uses pointers
- *      * Return: Alawy (0)
- *      */
-/*for loop */
+ * _strlen - Returns the length of a string
+ * @s: String to count
+ *
+ * Return: String length
+ */
 int _strlen(char *s)
 {
-int i;
+int c = 0;
 
-for (i = 0; s[i] != '\0'; ++i)
+for (; *s != '\0'; s++)
 {
-continue;
+c++;
 }
-return (i);
+
+return (c);
 }
+
