@@ -1,20 +1,23 @@
-#include "main.h"
-
+#include <stdio.h>
 /**
- * _memset - fills memory with a constant byte
- * @s: memory space to be filled
- * @b: byte to fill with
- * @n: number of spaces to fill
+ * _strchr - finds if char occurs in string
  *
- * Return: pointer to memory area s
+ * @s: string to check
+ * @c: character to find in s
+ *
+ * Return: pointer to first instance of c, otherwise NULL
  */
-char *_memset(char *s, char b, unsigned int n)
+char *_strchr(char *s, char c)
 {
-unsigned int i;
+int i = 0;
 
-for (i = 0; i < n; i++)
+while (*(s + i))
 {
-*(s + i) = b;
+if (*(s + i) == c)
+return (s + i);
+i++;
 }
-return (s);
+if (*(s + i) == c)
+return (s + i);
+return (NULL);
 }
